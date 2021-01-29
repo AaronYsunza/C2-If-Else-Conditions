@@ -54,3 +54,28 @@ elif (even_odd%2 == 0):
   print("Your number is even.")
 else:
   print("N/A")
+
+# Math Quadrants
+# Ask the user for an x and a y value
+
+# Using a nested conditional, output which quadrant they are in
+
+x = int(input("What's your X-axis? "))
+y = int(input("what's your Y-axis? "))
+
+if (x > 0):
+  if (y > 0):
+    print("It is in the first quadrant.")
+  else:
+    print("Your number is in the fourth quadrant.")
+elif (x < 0):
+  if (y < 0):
+    print("It is in the third quadrant.")
+  if(y > 0):
+    print("Your number is in the second quadrant.")
+
+if (x == 0 and y == 0):
+  print("You're on the origon.")
+
+# and, or
+# and takes precedence over or
